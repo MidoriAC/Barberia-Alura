@@ -1,0 +1,414 @@
+body{
+    font-family: 'Dancing Script', cursive;
+} 
+
+header{
+   background: url(imagenes/bg.jpg);
+   
+    padding: 75px 0;
+    position:fixed;
+    width: 100%;
+    
+}
+
+.caja{
+    /*background: red;*/
+    width: 940px; /*Espacio entre objetos, solo afecta los que esten dentro del rango*/
+    position:relative; /*Ayuda a mantener la estrucura interna*/
+   
+    margin: 0 auto; /* el primer 0 es el margen superior, de arriba para abajo, es decir, si se pone más espacio dará más espacio arriba hacia los objetos */
+    /*el auto es un ajuste automatico para la posición de los objetos por dentro de los cuadros div etc*/ 
+}
+.caja img{
+    position:absolute;
+    top: -100px;
+    
+}
+
+nav{
+    position: absolute ;/*Este mantiene el menú arriba*/
+    top: 0px; /*margen de arriba*/
+    right: 0px; /*Posición a la derecha*/
+}
+nav li{
+    display: inline; /*Coloca los elemntos de una lista en forma horizontal*/
+    margin: 0 0 0 15px; /*Cada uno afecta el espcaciamiento entre cada uno de los elemntos de la lista*/
+}
+
+ nav a{
+    /*text-transform:uppercase; /*UPERCASE hace el texto más grande*/
+    
+    color: white;
+    /*font-weight: bold;/*Estilo de letra, en este caso, negrita*/
+    font-size: 40px; /*Tamaño de las letras*/
+    text-decoration:none;
+}
+
+/*Esta función es para que al acercar el mause
+el cuadre se marque en color amarillo*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+/*------------------------*/
+/*PRODUCTOS*/
+    
+.productos-fondo{
+    position: static;
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+.productos{
+    position:static;
+    width: 940px;  
+    margin: -575px auto 0 auto;
+    /*margin: 0 auto; */
+    padding: 50px; /*El padding es importente
+    define el tamaño dentro de html, es decir ej. un cuadro de 50 de altop por 50 de anchor*/
+    color: #FFFFFF;
+}
+.productos li{
+    display: inline-block;/*Este es para posicionar bien los bloques*/
+    text-align: center;
+    width: 30%; /*Tamaño de cada cuadro*/
+    vertical-align:top;
+    margin: 0 1.5%; /*Margen derecho el primer 0 1.5 es el margen izquierdo, en este se separa cada unos de los
+    cuadros */
+
+    padding: 30px 15px; /*30 es la alura de arriba de las imagenes al cuadro
+    el 15 es el margen de los cuadros a la imagen derecho*/
+    box-sizing: border-box;
+
+    border: 3px solid #000000;
+
+    border-radius: 10px;
+}
+.productos li:hover{
+    border-color: #c78c19;
+    
+}
+
+/*Cuando se haga click al boton que se
+resalte de color verde*/
+.productos li:active{
+    border-color: #088c19;
+}
+
+/*Titulos*/
+.productos h2{
+    font-size: 30px;
+  /*  font-weight: bold;*/
+}
+
+/*Cuando se le hace click las letras del 
+titulo se haran más grandes*/
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+/*Descripción*/
+.prodcuto-descripcion{
+    font-size: 18px;}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold ;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+/*-----CONTACTO ------*/
+.fondo-contacto{
+    background-color: #2c2a2a;
+}
+
+.cuerpo label, legend, td{
+    color: white;
+}
+.caja2{
+position: static;
+padding: 10%;
+
+}
+
+.cuerpo{ /*Este es para el contacto*/
+    position:static;
+    width: 940px;
+    margin: auto auto 2em auto;
+    
+
+    
+}
+
+
+
+form{
+    position: static;
+    margin: 40px/*Margen arriba y abajo*/ 0 0 0/*Margen de los costados*/;
+}
+
+form label, form legend{
+   
+    display: block;
+    font-size: 20px;
+    margin: 0 /*Parte superior*/ 0/*A la derecha*/ 10px /*Parte inferior*/;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px/*Superior e inferior*/ 25px/*Costados*/;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;/*Tamaño del cuadro*/
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border:none;
+
+    border-radius: 5px;
+    transition: 1s all; /*Cuanto dura la transición, all se refiere al tiempo que transforma todas las propiedades del botón*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+   background: darkorange;
+   transform: scale(1.2) ;
+   
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+ /*-----------------------------------------------*/
+/*CSS para página HOME*/
+.caja-banner{
+    position: static;
+    /*display: inline-block;*/
+    text-align: center;
+}
+.banner{
+    position:static;
+
+    width: 100%;
+    /*margin: 150px auto 0 auto; */
+}
+
+.principal{
+    padding: 0 0 auto 0;
+    
+    width: 940PX;
+    margin: -50% auto 10% auto;
+    position:static;
+    
+    
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 6em; /*Ducplica el tamaño de fuente por defecto del
+    navgador*/
+    margin: 0 /*arriba*/ 0 /*derecha*/ 1em /*inferior*/;
+    clear: left;
+    /*text-shadow: 2px 2px red;*/ /*Sombreado para texto*/
+    color: #FFFFFF;
+}
+
+.principal p{
+    text-align: center;
+    margin: 0 0 1em;
+    color: #FFFFFF;
+    font-size: 2em;
+    /*width: 940px;
+    margin: 0 auto;*/
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa{
+   
+    background-image: url(imagenes/ubicacionimg.jpg);
+    background-repeat: no-repeat;
+    background-size:auto auto;
+    padding: 3em 0;
+    /*background: linear-gradient( #5f5656,  #443930) ; /*Si no lo quisera de color 1 a 2 para abajo
+    puedo darle grados como parametro, debe ser inicial ejemplo linear-gradient(45deg, #FEFEFE, #888888)*/
+    box-shadow: inset 0 0 70px 40px #000000;
+    
+}
+.mapa p{
+    margin: 0 0 1em;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: linear-gradient(#443930, #1f1e1e);
+    box-shadow: inset 0 0 70px 40px #000000;
+    /*box-shadow: inset 0 0 30px Red;*//*ESTE AGREGA UN MARCO DE SOMBRA EN EL CUADRO DE LOS DIFERENCIALES*/
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+.items:first-child{
+    font-weight: bold;
+}
+.items:before{
+    content: "\2605";
+}
+
+.imagenDiferenciales{
+    width: 60%; /*anchura*/
+    box-shadow: 10px/*Horizontal*/ 10px /*VErticaL*/ 30px/*Difuminación o degradado*/ 15px/*Expanción o cuanto se desea que ocupe*/ #000000/*Color de la zombra*/;
+    /*Se puede separar por una coma para agregar un más parametros, esta, consta de 4 parametros iniciales, el difuminado o expación son opcionales*/
+
+    
+}
+
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+    transition: 400ms;
+    
+    
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto /*auto laterales*/;
+}
+
+/*------------------------RESPONSIVE------------------------------*/
+@media screen and (max-width:414px){
+    header{
+        position: static;
+        padding: initial;
+       
+    }
+    .caja img{
+        
+        position: static;
+        margin: auto;
+        
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+    nav a{
+        
+        font-size: 30px;
+        
+       
+    }
+   
+    /*.diferenciales{
+        display: none;
+    }*/
+    .diferenciales h3{
+        font-size: 65px;
+    }
+        .principal{
+           
+            background: linear-gradient(#2c2a2a, #000000);
+            padding: 3em 0;
+            position: initial;
+            margin: 0 auto;
+           
+        }
+      .caja-banner{
+       position: initial;
+       text-align: initial;
+      }
+      .banner{
+        position: initial;
+      }
+     
+
+     
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos, .cuerpo
+    ,.enviar{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+    .productos{
+       margin: 15% 0 0 0;
+       background-color: #FFFFFF;
+    }
+    .productos h2, p{
+       color: #000000; 
+    }
+    .productos li{
+        width: 100%;
+        margin: 15px 0 0 0;
+        padding: 0aupx;
+    }
+    .productos-fondo{
+        display: none;
+    }
+
+    .cuerpo{
+        margin: 0 0 0 50px;
+    }
+    
+}
